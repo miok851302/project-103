@@ -1,0 +1,846 @@
+{
+  "version": "1.0.0",
+  "reviewedAt": "2026-11-02",
+  "coverageNote": "This company is not in the curated issue database yet. The SEC filing scan below is live and complete, but the curated list only covers companies we have researched and cited by hand. Absence of curated issues does NOT mean a clean record.",
+  "methodology": "Every curated issue is a documented, publicly reported corporate event with at least one primary or reputable source link. Entries describe what was reported and how it was resolved or where it stands. They are not investment advice and do not replace reading the filings.",
+  "severityLegend": {
+    "critical": "Existential or multi-billion-dollar, with criminal, insolvency or systemic consequences.",
+    "high": "Material to the business or to shareholders, often billions in costs or a major regulatory sanction.",
+    "medium": "Notable governance, accounting or operational problem with real but bounded consequences.",
+    "low": "Watch item: smaller in scale or largely resolved, but relevant to management quality."
+  },
+  "categories": [
+    "Accounting & controls",
+    "Regulatory & legal",
+    "Litigation & conduct",
+    "Governance",
+    "Operations & safety",
+    "Financial distress",
+    "Data & security",
+    "Workforce & human rights"
+  ],
+  "companies": {
+    "AAPL": {
+      "name": "Apple Inc.",
+      "note": "Apple's governance profile is dominated by its relationship with App Store regulation and the long-running Apple vs Epic litigation, rather than accounting or fraud events.",
+      "issues": [
+        {
+          "title": "App Store commission fights and global regulation",
+          "category": "Regulatory & legal",
+          "severity": "high",
+          "status": "Ongoing",
+          "date": "2020-2024",
+          "summary": "Apple's 15–30% App Store commission has faced antitrust proceedings across the EU, US and Asia. The EU Digital Markets Act forced Apple to open iOS to alternative marketplaces and payment methods in Europe from 2024.",
+          "impact": "A material share of Services revenue is exposed. Regulators in multiple jurisdictions continue to scrutinise App Store terms.",
+          "sources": [
+            { "label": "European Commission — Digital Markets Act enforcement", "url": "https://digital-markets-act.ec.europa.eu/" }
+          ]
+        },
+        {
+          "title": "Apple v. Epic Games — App Store monopoly ruling",
+          "category": "Litigation & conduct",
+          "severity": "medium",
+          "status": "Resolved (partly)",
+          "date": "2020-2025",
+          "summary": "Epic sued Apple over App Store control. The court rejected most monopolisation claims but ordered Apple to allow out-of-app payment links in the US. Apple fought the order and continued appeals.",
+          "impact": "The precedent limits Apple's ability to block external payments in the US, chipping at Services economics.",
+          "sources": [
+            { "label": "US District Court ruling — Epic v. Apple", "url": "https://www.courtlistener.com/docket/17442383/epic-games-inc-v-apple-inc/" }
+          ]
+        },
+        {
+          "title": "Irish State Aid tax case",
+          "category": "Regulatory & legal",
+          "severity": "high",
+          "status": "Resolved",
+          "date": "2016-2024",
+          "summary": "The European Commission ordered Ireland to recover about \u20ac13 billion in alleged illegal State aid from Apple. Both Apple and Ireland appealed. The EU Court of Justice finally upheld the Commission in September 2024.",
+          "impact": "A one-off multibillion-euro tax charge, and a warning that Apple's low effective tax rate was structurally contested.",
+          "sources": [
+            { "label": "EU Court of Justice press release — Apple v Commission", "url": "https://curia.europa.eu/juris/liste.jsf?num=C-465/20" }
+          ]
+        }
+      ]
+    },
+    "MSFT": {
+      "name": "Microsoft Corporation",
+      "note": "Microsoft's issues have concentrated on antitrust (historically and again in 2024 with the UK CMA) and on the acquisition integration of Activision Blizzard.",
+      "issues": [
+        {
+          "title": "Cloud licensing complaints and UK CMA investigation",
+          "category": "Regulatory & legal",
+          "severity": "medium",
+          "status": "Ongoing",
+          "date": "2023-2025",
+          "summary": "Competitors (including AWS and Google) and the UK Competition and Markets Authority alleged Microsoft's cloud licensing makes it costly to run Microsoft software on rival clouds. The CMA opened a cloud services market investigation and received a cloud licensing remedy proposal from Microsoft in 2025.",
+          "impact": "If remedies force changes to bundled licensing, Microsoft's Azure and enterprise economics could weaken.",
+          "sources": [
+            { "label": "UK Competition and Markets Authority — cloud services market investigation", "url": "https://www.gov.uk/cma-cases/cloud-services-market-investigation" }
+          ]
+        },
+        {
+          "title": "Activision Blizzard acquisition — long regulatory fight",
+          "category": "Regulatory & legal",
+          "severity": "medium",
+          "status": "Resolved",
+          "date": "2022-2023",
+          "summary": "Microsoft's $68.7 billion acquisition of Activision Blizzard was challenged by the FTC and blocked initially by the UK CMA before closing in October 2023 after concessions. A US federal court also rejected the FTC's preliminary injunction.",
+          "impact": "$68.7 billion of goodwill added to the balance sheet — integration risk and goodwill impairment exposure sit with the gaming segment.",
+          "sources": [
+            { "label": "UK CMA — Microsoft / Activision decision", "url": "https://www.gov.uk/cma-cases/microsoft-slash-activision-blizzard-merger-inquiry" }
+          ]
+        },
+        {
+          "title": "Historic US antitrust case (United States v. Microsoft)",
+          "category": "Regulatory & legal",
+          "severity": "high",
+          "status": "Resolved",
+          "date": "1998-2001",
+          "summary": "The US Department of Justice sued Microsoft for illegally maintaining a monopoly in PC operating systems. The trial court ordered a break-up; the appeal court reversed that and a 2001 settlement imposed conduct remedies.",
+          "impact": "The precedent shaped two decades of Microsoft's cautious acquisition and bundling behaviour.",
+          "sources": [
+            { "label": "US DOJ antitrust case archive", "url": "https://www.justice.gov/atr/case/us-v-microsoft-corporation" }
+          ]
+        }
+      ]
+    },
+    "META": {
+      "name": "Meta Platforms, Inc.",
+      "note": "Meta carries one of the densest documented regulatory and conduct histories of any listed company — privacy, antitrust and content moderation all appear in official records.",
+      "issues": [
+        {
+          "title": "Cambridge Analytica and the $5 billion FTC privacy settlement",
+          "category": "Data & security",
+          "severity": "critical",
+          "status": "Resolved",
+          "date": "2018-2019",
+          "summary": "The Cambridge Analytica scandal exposed how a political consultancy obtained user data via an app and Facebook's lax enforcement of its 2011 privacy order. In 2019 the FTC fined Facebook $5 billion and imposed a 20-year consent order with independent oversight.",
+          "impact": "The single largest FTC privacy penalty ever at the time, plus a structural compliance regime that remains in force.",
+          "sources": [
+            { "label": "US Federal Trade Commission — $5 billion privacy settlement", "url": "https://www.ftc.gov/news-events/news/press-releases/2019/07/ftc-imposes-5-billion-penalty-sweeping-new-privacy-restrictions-facebook" }
+          ]
+        },
+        {
+          "title": "FTC antitrust case over Instagram and WhatsApp",
+          "category": "Regulatory & legal",
+          "severity": "high",
+          "status": "Resolved (against FTC)",
+          "date": "2020-2025",
+          "summary": "The FTC alleged Meta maintained an illegal monopoly by acquiring Instagram and WhatsApp. A federal district court dismissed the case in 2021, an appeals court revived it, and in late 2025 the district court ruled in Meta's favour.",
+          "impact": "Despite the win, divestiture of Instagram or WhatsApp was a credible tail risk for five years, and the case forced disclosure of internal communications.",
+          "sources": [
+            { "label": "FTC — Meta antitrust case filings", "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/1910134-facebook-inc-ftc-v" }
+          ]
+        },
+        {
+          "title": "EU General Data Protection Regulation fine (Instagram and WhatsApp)",
+          "category": "Regulatory & legal",
+          "severity": "medium",
+          "status": "Resolved",
+          "date": "2023",
+          "summary": "Ireland's Data Protection Commission fined Meta \u20ac1.2 billion in 2023 for transferring user data to the US in breach of GDPR, and earlier fined it \u20ac405 million over teen privacy settings.",
+          "impact": "Recurring GDPR fines and a forced re-architecture of data flows between the EU and the US.",
+          "sources": [
+            { "label": "Irish Data Protection Commission — Meta decision", "url": "https://www.dataprotection.ie/en/news-media/press-releases" }
+          ]
+        }
+      ]
+    },
+    "AMZN": {
+      "name": "Amazon.com, Inc.",
+      "note": "Amazon's documented record centres on market power investigations, worker safety findings and warehouse working conditions.",
+      "issues": [
+        {
+          "title": "FTC antitrust case and 2025 consent order",
+          "category": "Regulatory & legal",
+          "severity": "high",
+          "status": "Resolved (settled)",
+          "date": "2023-2025",
+          "summary": "The FTC sued Amazon in 2023 alleging it punished sellers who offered lower prices elsewhere and abused its position to raise fees. In 2025 Amazon agreed to a consent order including roughly $2.5 billion in penalties and restrictions on retail platform practices.",
+          "impact": "The order constrains its ability to use seller data and fee structures as an advantage over rivals.",
+          "sources": [
+            { "label": "US Federal Trade Commission — Amazon antitrust case", "url": "https://www.ftc.gov/news-events/news/press-releases/2023/09/ftc-sues-amazon-illegally-maintaining-monopoly-power" }
+          ]
+        },
+        {
+          "title": "Warehouse safety findings and unionisation fights",
+          "category": "Workforce & human rights",
+          "severity": "medium",
+          "status": "Ongoing",
+          "date": "2019-present",
+          "summary": "Regulators and worker groups have documented elevated injury rates in Amazon warehouses. The company contested the findings and litigated against a union victory in Bessemer, Alabama before the unionisation vote was set aside and later re-run.",
+          "impact": "Ongoing labour, compliance and reputational cost, and a source of regulatory pressure in several countries.",
+          "sources": [
+            { "label": "US House Oversight Committee report on warehouse injury surveillance", "url": "https://oversightdemocrats.house.gov/news/press-releases/new-report-reveals-how-amazon-s-injury-surveillance-tracking-or-aggressive-productivity-encourages" }
+          ]
+        }
+      ]
+    },
+    "GOOGL": {
+      "name": "Alphabet Inc.",
+      "note": "Google's record includes the largest US federal search monopolisation judgment and the associated remedies proceedings, alongside advertising and privacy enforcement.",
+      "issues": [
+        {
+          "title": "US District Court ruling: Google maintained an illegal search monopoly",
+          "category": "Regulatory & legal",
+          "severity": "critical",
+          "status": "Ongoing (remedies)",
+          "date": "2020-2025",
+          "summary": "The US Department of Justice sued Google in 2020 over search distribution deals. In 2024 the district court found Google illegally maintained a monopoly in general search and search advertising. A remedies trial, including possible divestiture of Chrome and restrictions on default-payment deals, concluded in 2025.",
+          "impact": "Google pays tens of billions of dollars annually in distribution payments that could be curtailed, and Chrome divestiture remains on the table.",
+          "sources": [
+            { "label": "US DOJ — United States v. Google LLC case page", "url": "https://www.justice.gov/atr/case/united-states-et-al-v-google-llc" }
+          ]
+        },
+        {
+          "title": "French and EU antitrust fines for advertising technology",
+          "category": "Regulatory & legal",
+          "severity": "high",
+          "status": "Resolved",
+          "date": "2019-2024",
+          "summary": "The European Commission fined Google \u20ac1.49 billion in 2019 for abusing its position in online search advertising and later pursued the AdTech case, while the French competition authority imposed a record fine for ad-tech self-preferencing.",
+          "impact": "Recurring fines and behavioural remedies in the advertising business, which remains Alphabet's largest revenue source.",
+          "sources": [
+            { "label": "European Commission — Google AdSense antitrust decision", "url": "https://ec.europa.eu/commission/presscorner/detail/en/IP_19_1770" }
+          ]
+        }
+      ]
+    },
+    "NVDA": {
+      "name": "NVIDIA Corporation",
+      "note": "NVIDIA's documented problems are concentrated in export controls on China and the regulatory abandonment of the Arm acquisition.",
+      "issues": [
+        {
+          "title": "Abandoned $40 billion Arm acquisition",
+          "category": "Regulatory & legal",
+          "severity": "high",
+          "status": "Resolved (withdrawn)",
+          "date": "2020-2022",
+          "summary": "NVIDIA agreed to acquire Arm from SoftBank for about $40 billion in 2020. Regulators in the US, UK and EU raised competition concerns, and NVIDIA abandoned the deal in February 2022 after committing to divestiture reviews it could not win.",
+          "impact": "Lost path to owning the CPU instruction-set architecture, and SoftBank recovered a legacy stake in NVIDIA under the termination terms.",
+          "sources": [
+            { "label": "US FTC press release — FTC sues to block NVIDIA/Arm", "url": "https://www.ftc.gov/news-events/news/press-releases/2021/12/ftc-sues-block-horizontal-merger-between-chip-supplier-nvidia-corporation-arm" }
+          ]
+        },
+        {
+          "title": "US export controls on advanced AI chips to China",
+          "category": "Regulatory & legal",
+          "severity": "critical",
+          "status": "Ongoing",
+          "date": "2022-present",
+          "summary": "Starting in 2022 and tightened repeatedly since, the US Commerce Department limited exports of advanced AI accelerators and related technology to China. NVIDIA designed compliant variants, but those were later restricted too, and further rule changes remain possible.",
+          "impact": "A material share of data-centre revenue remains exposed to policy changes, and the company has disclosed billions of dollars of write-offs and potential revenue loss in filings.",
+          "sources": [
+            { "label": "US Bureau of Industry and Security — export controls on advanced computing", "url": "https://www.bis.gov/press-release/commerce-strengthens-restrictions-advanced-computing-semiconductors-manufacturing-equipment-supercomputing" }
+          ]
+        }
+      ]
+    },
+    "TSLA": {
+      "name": "Tesla, Inc.",
+      "note": "Tesla's governance profile is distinctive for CEO concentration, the largest CEO pay package ever proposed, and litigation around both.",
+      "issues": [
+        {
+          "title": "Voided $56 billion CEO pay package and its re-approval fight",
+          "category": "Governance",
+          "severity": "critical",
+          "status": "Ongoing",
+          "date": "2018-present",
+          "summary": "In 2024 a Delaware court rescinded Tesla's 2018 compensation package for Elon Musk, worth up to about $56 billion, finding the approval process was flawed and the board lacked independence. Tesla put the package to shareholders again; a full appellate process followed.",
+          "impact": "Creates uncertainty over management incentives and Delaware incorporation, and raised questions about board independence.",
+          "sources": [
+            { "label": "Delaware Court of Chancery — Tornetta v. Musk opinion", "url": "https://courts.delaware.gov/opinions/download.aspx?ID=306911" }
+          ]
+        },
+        {
+          "title": "Regulatory scrutiny of Autopilot and Full Self-Driving claims",
+          "category": "Operations & safety",
+          "severity": "high",
+          "status": "Ongoing",
+          "date": "2016-present",
+          "summary": "US regulators investigated dozens of Autopilot-related crashes and issued a recall order over the driver-monitoring system in 2023. Tesla also faces a Department of Justice investigation relating to FSD and Autopilot claims, and several wrongful-death suits.",
+          "impact": "Potential liability, recall costs and a legal risk around marketed autonomy claims.",
+          "sources": [
+            { "label": "US NHTSA — Tesla Autopilot recall order", "url": "https://www.nhtsa.gov/press-releases/tesla-recalls-2-million-vehicles-autopilot" }
+          ]
+        },
+        {
+          "title": "Workforce and discrimination settlements",
+          "category": "Workforce & human rights",
+          "severity": "medium",
+          "status": "Resolved (settled)",
+          "date": "2021-2023",
+          "summary": "Tesla agreed to pay $3.2 million to Black workers at its Fremont plant in 2022 after an EEOC racial harassment and retaliation lawsuit, and faced further discrimination complaints.",
+          "impact": "Recurring workplace liability and reputational exposure.",
+          "sources": [
+            { "label": "US EEOC — Tesla verdict settlement", "url": "https://www.eeoc.gov/newsroom/eeoc-sues-tesla-racial-discrimination" }
+          ]
+        }
+      ]
+    },
+    "JPM": {
+      "name": "JPMorgan Chase & Co.",
+      "note": "JPMorgan's record spans proprietary-trading scandals, AML failures and the acquisition of First Republic after it failed.",
+      "issues": [
+        {
+          "title": "London Whale trading losses and $920 million fine",
+          "category": "Regulatory & legal",
+          "severity": "high",
+          "status": "Resolved",
+          "date": "2012-2013",
+          "summary": "A synthetic credit portfolio at the Chief Investment Office lost more than $6 billion in 2012. Regulators found a high-risk proprietary trading operation concealed within risk management, and the bank paid about $920 million in US and UK fines in 2013.",
+          "impact": "Remediation of controls and the legal basis for the Volcker rule.",
+          "sources": [
+            { "label": "UK FCA and US regulators — London Whale settlements", "url": "https://www.sec.gov/news/press-release/2013-178" }
+          ]
+        },
+        {
+          "title": "Bernie Madoff Ponzi scheme — failure to flag red flags",
+          "category": "Regulatory & legal",
+          "severity": "high",
+          "status": "Resolved",
+          "date": "2008-2014",
+          "summary": "JPMorgan held Madoff's main accounts. US authorities found the bank failed to report suspicious activity and ignored red flags. It paid a $1.7 billion deferred-prosecution settlement in 2014 and about $2.6 billion in related civil and shareholder recoveries.",
+          "impact": "Made anti-money-laundering compliance a board-level priority across the sector.",
+          "sources": [
+            { "label": "US DOJ — JPMorgan Madoff deferred prosecution", "url": "https://www.justice.gov/opa/pr/manhattan-us-attorney-and-fbi-assistant-director-charge-manhattan-financial-institution-0" }
+          ]
+        },
+        {
+          "title": "First Republic Bank failure (second-largest US bank failure)",
+          "category": "Financial distress",
+          "severity": "medium",
+          "status": "Resolved",
+          "date": "2023",
+          "summary": "First Republic collapsed in May 2023 after a deposit run; regulators brokered the sale of most of the bank to JPMorgan Chase, along with a $50 billion valuation-related arrangement for the acquired assets.",
+          "impact": "Grows JPMorgan's private wealth franchise but converts a market weakness into political and regulatory attention.",
+          "sources": [
+            { "label": "FDIC — First Republic Bank receivership", "url": "https://www.fdic.gov/news/press-releases/2023/pr23033.html" }
+          ]
+        }
+      ]
+    },
+    "WFC": {
+      "name": "Wells Fargo & Company",
+      "note": "The fake-accounts scandal is the defining governance event in modern Wells Fargo history and cast doubt on the board's ability to oversee culture.",
+      "issues": [
+        {
+          "title": "Fake accounts scandal and $3 billion settlement",
+          "category": "Regulatory & legal",
+          "severity": "critical",
+          "status": "Resolved (settled)",
+          "date": "2016-2020",
+          "summary": "Employees opened millions of deposit, credit card and loan accounts without customer authorisation to meet aggressive sales targets. In 2020 Wells Fargo agreed to a $3 billion settlement over criminal and civil investigations, and the Fed capped the bank's asset growth until its governance was remediated.",
+          "impact": "The asset cap constrained the bank for 7 years, plus billions in customer remediation and the replacement of the CEO and board.",
+          "sources": [
+            { "label": "US DOJ — Wells Fargo $3 billion settlement", "url": "https://www.justice.gov/opa/pr/wells-fargo-agrees-pay-3-billion-resolve-criminal-and-civil-investigations-sales-practices" }
+          ]
+        }
+      ]
+    },
+    "BA": {
+      "name": "The Boeing Company",
+      "note": "Boeing is the canonical example of how a safety failure becomes an accounting, legal and reputational crisis spanning years.",
+      "issues": [
+        {
+          "title": "737 MAX crashes and $2.5 billion US settlement",
+          "category": "Operations & safety",
+          "severity": "critical",
+          "status": "Resolved (settled)",
+          "date": "2018-2021",
+          "summary": "Two 737 MAX crashes in 2018 and 2019 killed 346 people. Boeing paid a $2.5 billion settlement in 2021 covering a criminal conspiracy charge over misleading regulators, a compensation fund and airline payments. The criminal charge was later reinstated in a subsequent court ruling in 2025.",
+          "impact": "Global fleet grounding, order cancellations, billions in compensation, and long-term damage to the FAA relationship.",
+          "sources": [
+            { "label": "US DOJ — Boeing $2.5 billion settlement", "url": "https://www.justice.gov/opa/pr/boeing-concludes-deferred-prosecution-agreement" }
+          ]
+        },
+        {
+          "title": "Alaska Airlines door plug blowout and production quality crisis",
+          "category": "Operations & safety",
+          "severity": "high",
+          "status": "Ongoing",
+          "date": "2024",
+          "summary": "A door plug blew out of a 737 MAX 9 in January 2024. The FAA grounded part of the fleet, capped 737 production, and a US NTSB investigation found bolts were not installed; Boeing faced further regulatory scrutiny and leadership changes.",
+          "impact": "Capped aircraft deliveries, new regulatory oversight and continued reputational damage.",
+          "sources": [
+            { "label": "US NTSB — Alaska Airlines 1282 investigation", "url": "https://www.ntsb.gov/investigations/Pages/DCA24MA063.aspx" }
+          ]
+        },
+        {
+          "title": "Ethics clauses and the CFO/CEO turnover",
+          "category": "Governance",
+          "severity": "medium",
+          "status": "Ongoing",
+          "date": "2023-2024",
+          "summary": "Boeing's board changed CEO, CFO and leadership after the production crisis, and its 2024 annual meeting drew a shareholder vote on executive pay and governance reforms.",
+          "impact": "Leadership instability compounded operational disruption.",
+          "sources": [
+            { "label": "Boeing — SEC filings", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000012927&type=DEF+14A" }
+          ]
+        }
+      ]
+    },
+    "XOM": {
+      "name": "Exxon Mobil Corporation",
+      "note": "Exxon's issues include historic liability for spill damages, climate litigation and the legal fight it lost against shareholder proposals.",
+      "issues": [
+        {
+          "title": "Exxon Valdez oil spill",
+          "category": "Operations & safety",
+          "severity": "high",
+          "status": "Resolved",
+          "date": "1989-2014",
+          "summary": "The tanker Exxon Valdez ran aground in Prince William Sound in 1989, spilling roughly 11 million gallons of oil. Exxon paid $900 million in a 1991 civil settlement and more than $2 billion in damages and remediation over two decades.",
+          "impact": "A template for environmental liability and disaster response obligations in the oil major sector.",
+          "sources": [
+            { "label": "Exxon Valdez Oil Spill Trustee Council — settlement history", "url": "https://evostc.state.ak.us/oil-spill-facts/" }
+          ]
+        },
+        {
+          "title": "Climate lawsuits by states and municipalities",
+          "category": "Litigation & conduct",
+          "severity": "high",
+          "status": "Ongoing",
+          "date": "2015-present",
+          "summary": "Several US states and municipalities sued Exxon and other oil majors for climate-related damages, alleging they concealed the impact of fossil fuels. Cases remain in early stages and could set precedents for liability.",
+          "impact": "Potential multi-billion-dollar liability and disclosure risk in a scenario where courts accept the theory of liability.",
+          "sources": [
+            { "label": "Climate Case Chart", "url": "https://climatecasechart.com/" }
+          ]
+        },
+        {
+          "title": "Shareholder proposal lawsuit — SEC rules and Delaware law",
+          "category": "Governance",
+          "severity": "low",
+          "status": "Resolved (against Exxon)",
+          "date": "2024",
+          "summary": "Exxon sued an activist investor to block a shareholder proposal. A Texas court later dismissed the claims, and the suit drew criticism for chilling shareholder engagement.",
+          "impact": "Limited financial impact but a reputational and governance red flag for how the board handles dissent.",
+          "sources": [
+            { "label": "US Court ruling — Exxon Mobil v. Arjuna Capital", "url": "https://www.courtlistener.com/docket/68126919/exxon-mobil-corporation-v-arjuna-capital-llc/" }
+          ]
+        }
+      ]
+    },
+    "T": {
+      "name": "AT&T Inc.",
+      "note": "AT&T's issues include a regulatory-FD penalty over selective disclosures and the botched WarnerMedia acquisition.",
+      "issues": [
+        {
+          "title": "$23 million SEC penalty for selectively disclosing phone data",
+          "category": "Regulatory & legal",
+          "severity": "high",
+          "status": "Resolved",
+          "date": "2019-2021",
+          "summary": "The SEC found AT&T disclosed subscriber-count information to analysts before a public release, in violation of Regulation FD, and fined it $23 million — the largest such penalty in a Regulation FD case.",
+          "impact": "Signal on how selectively the company managed disclosure and analyst expectations, plus a record fine.",
+          "sources": [
+            { "label": "US SEC — AT&T Regulation FD settlement", "url": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-24981" }
+          ]
+        },
+        {
+          "title": "WarnerMedia acquisition and divestiture",
+          "category": "Governance",
+          "severity": "high",
+          "status": "Resolved",
+          "date": "2016-2022",
+          "summary": "AT&T bought Time Warner for $85 billion in 2018 after a DOJ antitrust trial. It spun the media business off and merged it into Warner Bros. Discovery in 2022, crystallising a massive value loss and adding debt.",
+          "impact": "The failed strategy cost the company a large share of its market value and left a heavily indebted balance sheet.",
+          "sources": [
+            { "label": "US DOJ — AT&T / Time Warner case", "url": "https://www.justice.gov/atr/case/us-v-att-inc-directv-group-holdings-llc-and-time-warner-inc" }
+          ]
+        },
+        {
+          "title": "Lead cables and environmental contamination disclosures",
+          "category": "Operations & safety",
+          "severity": "medium",
+          "status": "Ongoing",
+          "date": "2023",
+          "summary": "Reports identified lead-sheathed legacy telecom cables and alleged contamination. AT&T and peers faced regulatory requests and shareholder pressure over the risk.",
+          "impact": "Potential remediation costs and environmental liability across a legacy network.",
+          "sources": [
+            { "label": "AT&T investor communications", "url": "https://investors.att.com/" }
+          ]
+        }
+      ]
+    },
+    "JNJ": {
+      "name": "Johnson & Johnson",
+      "note": "J&J's record is dominated by the talc litigation and the repeated use of subsidiary bankruptcy as a liability management tool.",
+      "issues": [
+        {
+          "title": "Talc litigation and the Texas two-step bankruptcies",
+          "category": "Litigation & conduct",
+          "severity": "critical",
+          "status": "Ongoing",
+          "date": "2017-present",
+          "summary": "Thousands of plaintiffs alleged J&J talc products caused ovarian cancer and mesothelioma. J&J repeatedly placed the talc liabilities into a new subsidiary and filed Chapter 11 to resolve claims collectively, a tactic courts rejected, then approved a new $8.9 billion prepackaged plan in 2025.",
+          "impact": "Multi-billion-dollar liabilities and a high-profile test of whether the strategy respects the bankruptcy process.",
+          "sources": [
+            { "label": "J&J — Red River Talc Chapter 11 announcement", "url": "https://www.jnj.com/media-center/press-releases/johnson-johnson-announces-that-its-subsidiary-red-river-talc-llc-has-filed-a-voluntary-prepackaged-chapter-11-case-to-resolve-all-current-and-future-ovarian-cancer-talc-claims" }
+          ]
+        },
+        {
+          "title": "Opioid claims and settlement",
+          "category": "Litigation & conduct",
+          "severity": "high",
+          "status": "Resolved (partly)",
+          "date": "2019-2024",
+          "summary": "J&J faced lawsuits over opioid marketing and paid a multibillion-dollar settlement as part of the national opioid litigation, while its consumer-health spinoff Kenvue took on some product liabilities.",
+          "impact": "Large cash payments over time and reputational cost connected to the public health crisis.",
+          "sources": [
+            { "label": "US National opioid settlements", "url": "https://www.opioidsettlementtracker.com/" }
+          ]
+        }
+      ]
+    },
+    "KO": {
+      "name": "The Coca-Cola Company",
+      "note": "Coca-Cola's documented issues have focused on tax disputes, the IRS transfer-pricing case, and sugar and health litigation.",
+      "issues": [
+        {
+          "title": "IRS transfer-pricing dispute worth billions",
+          "category": "Regulatory & legal",
+          "severity": "high",
+          "status": "Ongoing",
+          "date": "2015-present",
+          "summary": "The IRS challenged Coca-Cola's transfer pricing with its foreign subsidiaries, claiming roughly $3.3 billion in additional income tax plus interest. The company has contested the claim and it remains in US Tax Court.",
+          "impact": "A potentially large cash tax liability and a warning over how the company priced intercompany transactions.",
+          "sources": [
+            { "label": "US Tax Court — Coca-Cola case docket", "url": "https://www.ustaxcourt.gov/" }
+          ]
+        },
+        {
+          "title": "Sugar, health and labelling litigation",
+          "category": "Litigation & conduct",
+          "severity": "medium",
+          "status": "Ongoing",
+          "date": "2012-present",
+          "summary": "Coca-Cola has faced lawsuits and regulatory scrutiny over sugar content, marketing to children and misleading claims, including arguments that it sponsored research to downplay health effects.",
+          "impact": "Long-run regulatory and demand risk in a core category, and an ongoing reputational debate.",
+          "sources": [
+            { "label": "Center for Science in the Public Interest — Coca-Cola campaign", "url": "https://www.cspinet.org/" }
+          ]
+        }
+      ]
+    },
+    "NKE": {
+      "name": "NIKE, Inc.",
+      "note": "Nike's record is dominated by supplier labour controversies and the 2018 workplace culture crisis.",
+      "issues": [
+        {
+          "title": "Workplace culture crisis and leadership turnover (2018)",
+          "category": "Workforce & human rights",
+          "severity": "medium",
+          "status": "Resolved",
+          "date": "2018-2020",
+          "summary": "Employee complaints about a hostile workplace, exclusionary behaviour and unequal treatment of women led to a review, departures of senior executives and the departure of the CEO, and later a shareholder lawsuit challenging the board's handling.",
+          "impact": "Reputational damage and a governance test of whether the board detected cultural problems.",
+          "sources": [
+            { "label": "NIKE — Investor relations announcements", "url": "https://investors.nike.com/" }
+          ]
+        },
+        {
+          "title": "Supplier labour and sweatshop allegations",
+          "category": "Workforce & human rights",
+          "severity": "medium",
+          "status": "Ongoing",
+          "date": "1990s-present",
+          "summary": "Since the 1990s, Nike has faced recurring allegations of poor working conditions and sub-minimum wages at contract factories. Independent research and NGO reports continue to dispute the company's compliance claims.",
+          "impact": "Reputational risk in its supply chain and pressure from ESG investors on supplier standards.",
+          "sources": [
+            { "label": "Business & Human Rights Resource Centre — NIKE", "url": "https://www.business-humanrights.org/en/companies/nike-inc/" }
+          ]
+        }
+      ]
+    },
+    "DIS": {
+      "name": "The Walt Disney Company",
+      "note": "Disney's issues centre on the Florida political fight over 'Don't Say Gay', the resulting state oversight, and the succession questions around its CEO.",
+      "issues": [
+        {
+          "title": "Florida Reedy Creek special district dispute",
+          "category": "Governance",
+          "severity": "medium",
+          "status": "Resolved (settled)",
+          "date": "2022-2024",
+          "summary": "After Disney criticised Florida's parental-rights law in 2022, the legislature dissolved the Reedy Creek special district that governed its parks and created a state-appointed board. Disney sued; the company and the new district ultimately settled, and Disney gave up some control in exchange for a development agreement.",
+          "impact": "Politicisation of a core asset, legal costs, and a real test of how contested public positions can hit operations.",
+          "sources": [
+            { "label": "US District Court — Walt Disney Parks v. DeSantis docket", "url": "https://www.courtlistener.com/docket/67224375/walt-disney-parks-and-resorts-us-inc-v-desantis/" }
+          ]
+        },
+        {
+          "title": "CEO succession and governance turmoil (2022-2024)",
+          "category": "Governance",
+          "severity": "high",
+          "status": "Ongoing",
+          "date": "2022-2024",
+          "summary": "Disney's board replaced Bob Chapek with Bob Iger in 2022, then faced an activist investor proxy fight in 2024 over strategy and succession planning. Iger won the shareholder vote but later announced his retirement timetable.",
+          "impact": "Board credibility and succession planning were questioned at a time of streaming losses and park investment.",
+          "sources": [
+            { "label": "Disney — 2024 proxy statement", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001744489&type=DEF+14A" }
+          ]
+        }
+      ]
+    },
+    "HSBC": {
+      "name": "HSBC Holdings plc",
+      "note": "HSBC's record includes a long-running anti-money-laundering enforcement and a US prosecution settlement over money laundering.",
+      "issues": [
+        {
+          "title": "US money-laundering enforcement and $1.9 billion settlement",
+          "category": "Regulatory & legal",
+          "severity": "critical",
+          "status": "Resolved",
+          "date": "2012-2022",
+          "summary": "In 2012, HSBC paid $1.92 billion and entered a five-year deferred prosecution agreement after US authorities found it laundered money for Mexican drug cartels and violated sanctions against Iran and Sudan. The agreement was extended to 2022.",
+          "impact": "The largest AML settlement at the time, a decade of enhanced supervision and a permanent compliance burden.",
+          "sources": [
+            { "label": "US DOJ — HSBC Holdings deferred prosecution", "url": "https://www.justice.gov/opa/pr/hsbc-holdings-plc-and-hsbc-bank-usa-na-admit-anti-money-laundering-and-sanctions-violations" }
+          ]
+        }
+      ]
+    },
+    "BABA": {
+      "name": "Alibaba Group Holding Limited",
+      "note": "Alibaba's issues have centred on Chinese regulatory action against platform antimonopoly conduct and the halted Ant Group listing.",
+      "issues": [
+        {
+          "title": "Chinese antitrust fine and the Ant Group listing halt",
+          "category": "Regulatory & legal",
+          "severity": "high",
+          "status": "Resolved (settled)",
+          "date": "2020-2021",
+          "summary": "China's market regulator fined Alibaba 18.2 billion yuan for abusing its dominant position in e-commerce, commonly described as the largest antitrust penalty in Chinese history. The Ant Group consumer-finance listing was halted in late 2020 as part of the same regulatory crackdown.",
+          "impact": "Frozen the fintech listing and exposed how political risk can override fundamentals for Chinese platforms.",
+          "sources": [
+            { "label": "Chinese State Administration for Market Regulation", "url": "https://www.samr.gov.cn/" }
+          ]
+        },
+        {
+          "title": "US-listed ADR investigation and delisting risk",
+          "category": "Regulatory & legal",
+          "severity": "medium",
+          "status": "Resolved (partly)",
+          "date": "2021-2023",
+          "summary": "A US SEC investigation and HFCAA audit-access requirements raised delisting and disclosure questions for Alibaba as a US-listed ADR. The company later agreed to an audit-inspection framework with US authorities.",
+          "impact": "Lifted some uncertainty but left ongoing investigation exposure.",
+          "sources": [
+            { "label": "US PCAOB — HFCAA determinations", "url": "https://pcaobus.org/oversight/international/hfcact" }
+          ]
+        }
+      ]
+    },
+    "PSKY": {
+      "name": "Paramount Skydance Corporation",
+      "note": "Paramount's record reflects a long merger cycle, leadership instability, impairment charges and a regulatory review of foreign ownership.",
+      "issues": [
+        {
+          "title": "Paramount–Skydance merger and FCC review",
+          "category": "Governance",
+          "severity": "medium",
+          "status": "Resolved (completed)",
+          "date": "2024-2025",
+          "summary": "Paramount Global agreed to merge with Skydance Media, with the transaction completing in 2025 after an FCC review that drew criticism for its scrutiny of the company's editorial policies. Ownership and control changed in the process.",
+          "impact": "A complex ownership transition and a politicised regulatory review make the historical record harder to compare year to year.",
+          "sources": [
+            { "label": "US FCC — Paramount international ownership review", "url": "https://www.fcc.gov/" }
+          ]
+        },
+        {
+          "title": "Goodwill impairment and streaming losses",
+          "category": "Accounting & controls",
+          "severity": "high",
+          "status": "Resolved (charged)",
+          "date": "2023-2025",
+          "summary": "Paramount recorded billions of dollars of goodwill and content impairments as streaming losses mounted and its cable networks declined in value.",
+          "impact": "An indication that prior acquisition values were overstated and that the legacy network business is in structural decline.",
+          "sources": [
+            { "label": "Paramount — SEC filings", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002041610&type=10-K" }
+          ]
+        }
+      ]
+    },
+    "GE": {
+      "name": "General Electric Company",
+      "note": "GE's record is the classic modern example of opaque financial-services accounting, SEC action, and a decade-long turnaround.",
+      "issues": [
+        {
+          "title": "SEC accounting settlement ($200 million)",
+          "category": "Accounting & controls",
+          "severity": "high",
+          "status": "Resolved",
+          "date": "2018-2020",
+          "summary": "The SEC charged GE in 2020 with failures in its disclosure controls and revenue recognition in legacy power and insurance businesses, and GE paid a $200 million penalty. GE had previously taken large charges and disclosed a $15 billion shortfall in its insurance reserves in 2018.",
+          "impact": "A long earnings-reset cycle, an SEC penalty, and the eventual breakup and spinoffs of aviation, health, and energy.",
+          "sources": [
+            { "label": "US SEC — GE penalty announcement", "url": "https://www.sec.gov/newsroom/press-releases/2020-298" }
+          ]
+        }
+      ]
+    },
+    "GS": {
+      "name": "The Goldman Sachs Group, Inc.",
+      "note": "Goldman's record includes the largest AML/fraud-related bank settlement in US history and a notable sovereign-wealth corruption case.",
+      "issues": [
+        {
+          "title": "1MDB scandal and $2.9 billion global settlement",
+          "category": "Regulatory & legal",
+          "severity": "high",
+          "status": "Resolved",
+          "date": "2018-2020",
+          "summary": "Goldman underwrote bond deals for 1MDB, a Malaysian sovereign wealth fund, and billions were diverted in a corruption scheme. In 2020 the bank agreed to pay about $2.9 billion in penalties, and its Malaysian subsidiary pleaded guilty in a US court.",
+          "impact": "A guilt plea by a major financial institution and a hit to its reputation in emerging-market underwriting.",
+          "sources": [
+            { "label": "US DOJ — Goldman Sachs 1MDB settlement", "url": "https://www.justice.gov/opa/pr/goldman-sachs-agrees-pay-more-29-billion-settlement-and-enter-guilt-plea-resolution" }
+          ]
+        }
+      ]
+    },
+    "SAP": {
+      "name": "SAP SE",
+      "note": "SAP's issues include a US FCPA settlement over bribery and a longer-term growth problem in cloud migrations.",
+      "issues": [
+        {
+          "title": "US FCPA settlements ($8 million and $14 million)",
+          "category": "Regulatory & legal",
+          "severity": "medium",
+          "status": "Resolved",
+          "date": "2016-2024",
+          "summary": "SAP agreed in 2016 to pay about $8 million to settle SEC charges that it violated the Foreign Corrupt Practices Act through subsidiaries in Mexico and Panama, and in 2024 agreed to pay about $14 million to settle DOJ and SEC charges of bribery in South Africa, Indonesia and other countries.",
+          "impact": "Chronic FCPA issues and ongoing compliance costs, though the fines are small relative to the company's scale.",
+          "sources": [
+            { "label": "US SEC — SAP FCPA settlement", "url": "https://www.sec.gov/newsroom/press-releases/2024-136" }
+          ]
+        }
+      ]
+    },
+    "TSM": {
+      "name": "Taiwan Semiconductor Manufacturing Company Limited",
+      "note": "TSMC's issues are geopolitical, not accounting: cross-strait risk and export-control exposure because its manufacture is critical to the global AI supply chain.",
+      "issues": [
+        {
+          "title": "Taiwan Strait geopolitical risk",
+          "category": "Operations & safety",
+          "severity": "critical",
+          "status": "Ongoing",
+          "date": "Ongoing",
+          "summary": "TSMC produces the vast majority of advanced semiconductors in Taiwan. Military tension across the Taiwan Strait presents the single largest operational risk to the company and to its customers' supply chains.",
+          "impact": "Would disrupt global chip supply; the company is investing in US and Japan capacity partly as a hedge.",
+          "sources": [
+            { "label": "TSMC — annual report risk factors", "url": "https://investor.tsmc.com/english/annual-reports" }
+          ]
+        },
+        {
+          "title": "US export restrictions on advanced chips to China",
+          "category": "Regulatory & legal",
+          "severity": "high",
+          "status": "Ongoing",
+          "date": "2022-present",
+          "summary": "US export controls restrict shipments of advanced chips and semiconductor equipment to China, which affects TSMC's ability to serve Chinese customers in leading-edge nodes.",
+          "impact": "Limits China revenue and increases compliance overhead.",
+          "sources": [
+            { "label": "US Bureau of Industry and Security — export controls", "url": "https://www.bis.gov/" }
+          ]
+        }
+      ]
+    },
+    "ASML": {
+      "name": "ASML Holding N.V.",
+      "note": "ASML's problems are policy-driven: export controls on its chipmaking tools, and the intensity of the technology race.",
+      "issues": [
+        {
+          "title": "Export restrictions on advanced lithography to China",
+          "category": "Regulatory & legal",
+          "severity": "high",
+          "status": "Ongoing",
+          "date": "2019-present",
+          "summary": "The Dutch government, under pressure from US policy, restricted ASML's exports of advanced EUV and some DUV systems to China. ASML disclosed a significant expected impact on Chinese sales in 2025.",
+          "impact": "Limits the addressable market, with the risk that policy tightens further.",
+          "sources": [
+            { "label": "ASML — investor disclosures on export controls", "url": "https://www.asml.com/en/investors" }
+          ]
+        }
+      ]
+    },
+    "INTC": {
+      "name": "Intel Corporation",
+      "note": "Intel's record includes a $1.5 billion EU antitrust fine, severe competitive decline, a dividend suspension and major restructuring.",
+      "issues": [
+        {
+          "title": "European antitrust fine and abuse of dominance",
+          "category": "Regulatory & legal",
+          "severity": "medium",
+          "status": "Resolved (partly)",
+          "date": "2009-2022",
+          "summary": "The European Commission fined Intel \u20ac1.06 billion in 2009 for abusing dominance through exclusivity rebates. On appeal the fine was annulled in 2022 and re-imposed at a lower level; the legal fight continued for over a decade.",
+          "impact": "Long legal distraction and a reminder that rebate schemes can attract antitrust exposure.",
+          "sources": [
+            { "label": "European Commission — Intel antitrust page", "url": "https://competition-cases.ec.europa.eu/cases/AT.37990" }
+          ]
+        },
+        {
+          "title": "Foundry losses, dividend suspension and leadership change",
+          "category": "Financial distress",
+          "severity": "critical",
+          "status": "Ongoing",
+          "date": "2024-2025",
+          "summary": "Intel's foundry business lost billions, the company suspended its dividend, announced a major restructuring, and the CEO resigned after a turnaround that failed to convince the board. It later sought outside investment, reportedly including government and strategic stakes.",
+          "impact": "A survival-level strategic reset, and an unusually public failure of a decade-long manufacturing strategy.",
+          "sources": [
+            { "label": "Intel — SEC filings", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000050863&type=8-K" }
+          ]
+        }
+      ]
+    },
+    "CRM": {
+      "name": "Salesforce, Inc.",
+      "note": "Salesforce's issues include activist pressure from Elliott over acquisitions and margin discipline, and the distraction of its AI positioning.",
+      "issues": [
+        {
+          "title": "Activist investor Elliott and margin pressure",
+          "category": "Governance",
+          "severity": "medium",
+          "status": "Resolved (settled)",
+          "date": "2023",
+          "summary": "Activist investor Elliott Management disclosed a multibillion-dollar stake in 2023 and pressed Salesforce to reduce M&A and improve margins. The company later framed a strategic pivot and Elliott stood down.",
+          "impact": "Shaped a cost-cutting programme and demonstrated shareholder pressure over capital allocation.",
+          "sources": [
+            { "label": "Salesforce — investor communications", "url": "https://investor.salesforce.com/" }
+          ]
+        }
+      ]
+    },
+    "MCD": {
+      "name": "McDonald's Corporation",
+      "note": "McDonald's issues include franchisee disputes, a CEO departure over a relationship, and food safety incidents.",
+      "issues": [
+        {
+          "title": "CEO departure over a workplace relationship",
+          "category": "Governance",
+          "severity": "medium",
+          "status": "Resolved",
+          "date": "2019-2020",
+          "summary": "CEO Steve Easterbrook was fired in 2019 for violating company policy over a consensual relationship with an employee. The company later sued him to reclaim severance over additional relationships and disclosures.",
+          "impact": "Leadership disruption and a governance lesson about disclosure and board oversight.",
+          "sources": [
+            { "label": "McDonald's — SEC filing on executive departure", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000063908&type=8-K" }
+          ]
+        },
+        {
+          "title": "Franchisee relations and the national franchisee coalition",
+          "category": "Governance",
+          "severity": "low",
+          "status": "Ongoing",
+          "date": "2018-present",
+          "summary": "A group of franchisees formed the National Owners Association and publicly criticised McDonald's for high rent and remodelling costs. The company adjusted some franchise terms.",
+          "impact": "Franchisee tension can slow remodelling and store-level profitability.",
+          "sources": [
+            { "label": "McDonald's — investor relations", "url": "https://corporate.mcdonalds.com/corpmcd/investors.html" }
+          ]
+        }
+      ]
+    }
+  }
+}

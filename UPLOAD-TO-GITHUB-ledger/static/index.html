@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ledger — search any listed company to see its leadership team, the disclosures in its SEC filings, and a curated, cited record of corporate problems.">
+  <meta name="theme-color" content="#0b1119">
+  <title>Ledger — who runs this company, and what has gone wrong?</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f0b44c'/%3E%3Cpath d='M20 16h24v6H36v20h8v6H20v-6h8V22h-8z' fill='%230b1119'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+  <svg class="sprite" aria-hidden="true">
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4.2-4.2"></path></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"></path></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.5.5l2-2a5 5 0 0 0-7-7l-1.2 1.2"></path><path d="M14 11a5 5 0 0 0-7.5-.5l-2 2a5 5 0 0 0 7 7l1.2-1.2"></path></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3 2.5 20h19z"></path><path d="M12 9v4M12 17h.01"></path></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"></circle><path d="M3 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5"></path><path d="M16 5.2a3.2 3.2 0 0 1 0 6"></path><path d="M18 14.8c2 .7 3.4 2.4 3.4 4.7"></path></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"></path><path d="M14 3v4h4"></path><path d="M9 12h6M9 16h6"></path></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 4h6v6"></path><path d="M20 4 10 14"></path><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"></path></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"></path></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"></path></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11Z"></path></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4.5 6v6c0 4.5 3.2 7.5 7.5 9 4.3-1.5 7.5-4.5 7.5-9V6z"></path></symbol>
+  </svg>
+
+  <div class="ambient" aria-hidden="true"><div class="glow a"></div><div class="glow b"></div><div class="grid"></div></div>
+
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Ledger home">
+      <span class="brand-mark">L</span>
+      <span class="brand-word">LEDGER</span>
+    </a>
+    <p class="brand-tag">Who runs it. What went wrong.</p>
+    <div class="top-actions">
+      <a class="ghost-btn" href="#issuesSection">Issues</a>
+      <a class="ghost-btn" href="#teamSection">Team</a>
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch theme"><svg class="icon"><use href="#i-sun"></use></svg></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="kicker"><span class="kicker-line"></span>CORPORATE GOVERNANCE, ON THE RECORD</div>
+      <h1>Who runs the company<span class="dot">.</span><br><em>And what has gone wrong.</em></h1>
+      <p class="hero-sub">Search any listed stock. See its leadership team, the material disclosures buried in its SEC filings, and a sourced record of its corporate problems.</p>
+
+      <div class="search-zone">
+        <form class="search-box" id="searchForm" role="search" autocomplete="off">
+          <svg class="icon search-icon"><use href="#i-search"></use></svg>
+          <label class="sr-only" for="searchInput">Search a company</label>
+          <input id="searchInput" type="text" placeholder="Search a company or ticker — Boeing, TSLA, Wells Fargo…" spellcheck="false" aria-expanded="false" aria-controls="suggestions">
+          <button class="search-btn" type="submit"><span>Investigate</span><svg class="icon"><use href="#i-arrow"></use></svg></button>
+        </form>
+        <div class="suggestions" id="suggestions" role="listbox" hidden></div>
+        <div class="quick-row">
+          <span class="quick-label">TRY</span>
+          <div class="quick-chips" id="quickChips">
+            <button type="button" data-symbol="BA">BA</button>
+            <button type="button" data-symbol="TSLA">TSLA</button>
+            <button type="button" data-symbol="WFC">WFC</button>
+            <button type="button" data-symbol="JPM">JPM</button>
+            <button type="button" data-symbol="AAPL">AAPL</button>
+            <button type="button" data-symbol="JNJ">JNJ</button>
+          </div>
+          <span class="quick-note">Yahoo Finance · SEC EDGAR · no login</span>
+        </div>
+      </div>
+
+      <div class="proof">
+        <div><strong id="curatedCount">—</strong><span>companies with curated records</span></div>
+        <div><strong id="keywordCount">—</strong><span>disclosure themes scanned</span></div>
+        <div><strong>3 yrs</strong><span>of filings searched</span></div>
+        <div><strong>0</strong><span>free-text opinions</span></div>
+      </div>
+    </section>
+
+    <div class="state" id="loadingState" hidden>
+      <div class="skel head"></div>
+      <div class="skel-row"><div class="skel card"></div><div class="skel card"></div></div>
+      <p class="loading-copy"><span class="spinner"></span> Fetching team, SEC filings and curated record…</p>
+    </div>
+
+    <div class="state error" id="errorState" hidden>
+      <div class="err-mark"><svg class="icon"><use href="#i-alert"></use></svg></div>
+      <div>
+        <p class="mono">INVESTIGATION INTERRUPTED</p>
+        <h2 id="errorTitle">Could not load that company.</h2>
+        <p id="errorMessage" class="muted">Check the ticker and try again.</p>
+        <div class="err-actions">
+          <button class="btn primary" id="retryButton" type="button">Try again</button>
+          <button class="btn ghost" type="button" data-symbol="AAPL">Load Apple instead</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="results" hidden>
+      <section class="company-head">
+        <div class="tick-mark" id="tickMark">AA</div>
+        <div class="company-titles">
+          <div class="eyebrow"><span class="mono" id="companyTicker">AAPL</span><span class="sep">·</span><span class="mono faint" id="companyExchange">NASDAQ</span><span class="tag" id="companySector">Technology</span></div>
+          <h2 id="companyName">Apple Inc.</h2>
+          <p id="companyMeta" class="company-meta">—</p>
+        </div>
+        <div class="head-actions">
+          <a class="btn ghost small" id="secLink" href="#" target="_blank" rel="noopener"><svg class="icon"><use href="#i-external"></use></svg><span>SEC filings</span></a>
+          <a class="btn ghost small" id="siteLink" href="#" target="_blank" rel="noopener"><svg class="icon"><use href="#i-external"></use></svg><span>Website</span></a>
+        </div>
+      </section>
+
+      <div class="notice" id="coverageNotice" hidden>
+        <svg class="icon"><use href="#i-alert"></use></svg>
+        <p id="coverageText"></p>
+      </div>
+
+      <section class="grid-top">
+        <article class="panel team-panel" id="teamSection">
+          <div class="panel-top">
+            <p class="mono">LEADERSHIP TEAM</p>
+            <span class="counter" id="teamCount">—</span>
+          </div>
+          <h2 class="panel-h2" id="teamHeading">Who runs it.</h2>
+          <p class="facts" id="teamFacts"></p>
+          <div class="officer-grid" id="officerGrid"></div>
+          <p class="panel-note">Scores are a checklist of public facts — age, pay relative to the team, separation of CEO/chair roles and disclosed equity. They measure what is on the record, not competence, and they do not predict performance.</p>
+        </article>
+
+        <article class="panel score-panel" id="riskPanel">
+          <div class="panel-top">
+            <p class="mono">CORPORATE RECORD</p>
+            <span class="risk-chip" id="riskChip">—</span>
+          </div>
+          <h2 class="panel-h2">What has gone wrong.</h2>
+          <div class="severity-bars" id="severityBars"></div>
+          <div class="stat-row">
+            <div><span>Curated issues</span><b id="curatedTotal">—</b></div>
+            <div><span>Open now</span><b id="openTotal">—</b></div>
+            <div><span>Categories</span><b id="categoryTotal">—</b></div>
+          </div>
+          <p class="panel-note" id="riskNote">—</p>
+        </article>
+      </section>
+
+      <section class="panel section" id="issuesSection">
+        <div class="panel-top">
+          <div>
+            <p class="mono">CURATED ISSUES</p>
+            <h2 class="panel-h2">A sourced record, not a vibe.</h2>
+          </div>
+          <div class="filters" id="severityFilter">
+            <button type="button" data-sev="all" class="on">All</button>
+            <button type="button" data-sev="critical">Critical</button>
+            <button type="button" data-sev="high">High</button>
+            <button type="button" data-sev="medium">Medium</button>
+            <button type="button" data-sev="low">Low</button>
+          </div>
+        </div>
+        <p class="panel-sub" id="curatedIntro">Documented corporate problems with links to the underlying source. Curated by hand — research, not an API.</p>
+        <div class="issue-list" id="issueList"></div>
+      </section>
+
+      <section class="panel section" id="filingsSection">
+        <div class="panel-top">
+          <div>
+            <p class="mono">SEC FILING SCAN</p>
+            <h2 class="panel-h2">What the filings say.</h2>
+          </div>
+          <span class="counter" id="filingsCount">—</span>
+        </div>
+        <p class="panel-sub" id="filingsIntro">Every hit below comes from a real filing in the SEC's EDGAR full-text search for this company, in the last three years. Each links straight to the document.</p>
+        <div class="filing-groups" id="filingGroups"></div>
+      </section>
+
+      <section class="method-note">
+        <div class="method-icon"><svg class="icon"><use href="#i-shield"></use></svg></div>
+        <div>
+          <p class="mono">HOW TO READ THIS</p>
+          <h3>Curated issues and filing hits answer different questions.</h3>
+          <p><strong>Curated issues</strong> are researched by hand: what was reported, how it was resolved or where it stands, with a link to the source. They are chosen to show how management has handled pressure.</p>
+          <p><strong>Filing hits</strong> are automated keyword matches in official documents. A sentence mentioning “class action” can be a routine risk disclosure, not a live lawsuit against the company — so read the linked page before concluding.</p>
+        </div>
+      </section>
+
+      <footer class="disclaimer">
+        <p><strong>Not investment advice.</strong> Ledger is a research aid. Curated records cover a limited set of companies and are reviewed periodically — they are not a complete list, and a company without a curated record is not a clean company.</p>
+        <p id="metaLine">—</p>
+      </footer>
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="/static/js/app.js"></script>
+</body>
+</html>
